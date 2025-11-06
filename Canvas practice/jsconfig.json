@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",                          
+    "checkJs": true,                          
+    "allowJs": true,                          
+    "module": "esnext",                       
+    "moduleResolution": "node",               
+    "lib": ["es6", "dom"],                    
+    "noEmit": true                            
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

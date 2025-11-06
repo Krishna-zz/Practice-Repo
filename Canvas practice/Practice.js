@@ -1,17 +1,27 @@
 
+    const canvas = /** @type {HTMLCanvasElement} */ (
+        document.getElementById("board")
+        );
 
-function draw(){
-    const canvas = document.getElementById("board")
-    const ctx = canvas.getContext('2d')
-
-    ctx.fillStyle = "red"
-    ctx.fillRect(50, 50 , 200, 200)
-
-    ctx.clearRect(100, 100, 100, 100)
-
-    ctx.strokeStyle = "green"
-    ctx.strokeRect(110, 110, 80, 80)
-}
+    const ctx = canvas.getContext("2d");
 
 
-draw()
+
+  
+   
+   ctx.beginPath();
+  ctx.arc(75, 75, 50, 0, Math.PI * 2, true); 
+  ctx.moveTo(110, 75);
+  ctx.arc(75, 75, 35, 0, Math.PI, false);
+  ctx.moveTo(65, 65);
+  ctx.arc(60, 65, 5, 0, Math.PI * 2, true); 
+  
+  ctx.moveTo(95, 65);
+  ctx.arc(90, 65, 5, 0, Math.PI * 2, true); 
+  
+  ctx.stroke();
+
+
+
+
+    
